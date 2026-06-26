@@ -295,11 +295,11 @@ def _write_index_file(cat, dom, cards_html, json_ld, count):
 <div class="controls">
   <input id="search" type="search" placeholder="Search subjects, e.g. wallet, scam, DeFi, stablecoin...">
   <div class="langbar" id="langbar">
-    <span class="lang active" data-l="all">All</span>
-    <span class="lang" data-l="en">EN</span>
+    <span class="lang active" data-l="en">EN</span>
     <span class="lang" data-l="es">ES</span>
     <span class="lang" data-l="pt">PT</span>
-    <span class="lang" data-l="hi">HI</span>
+    <span class="lang" data-l="hi">IN</span>
+    <span class="lang" data-l="all">ALL</span>
   </div>
 </div>
 <div class="controls" id="levelbar">
@@ -334,7 +334,7 @@ def _append_index_footer_js(cat, dom, head, count):
 <script>
 (function(){{
   var grid=document.getElementById('grid'),cards=[].slice.call(grid.children);
-  var q='',lang='all',lv='all',empty=document.getElementById('empty');
+  var q='',lang='en',lv='all',empty=document.getElementById('empty');
   function apply(){{
     var shown=0;
     cards.forEach(function(c){{
@@ -356,15 +356,16 @@ def _append_index_footer_js(cat, dom, head, count):
     [].forEach.call(this.children,function(x){{x.classList.remove('active');}});
     e.target.classList.add('active');lv=e.target.dataset.lv;apply();
   }});
-  // Auto language by visitor location (best-effort, non-blocking, override-able)
+  // Default view is EN (ordered). Geo-detect overrides for es/pt/hi visitors.
   try{{
     var nav=(navigator.language||'en').slice(0,2).toLowerCase();
     var map={{'es':'es','pt':'pt','hi':'hi','en':'en'}};
     if(map[nav]&&map[nav]!=='en'){{
       var btn=document.querySelector('.lang[data-l="'+map[nav]+'"]');
-      if(btn) btn.click();
-    }}
-  }}catch(e){{}}
+      if(btn){{btn.click();}}
+      else{{apply();}}
+    }}else{{apply();}}
+  }}catch(e){{apply();}}
 }})();
 </script>
 </body>
