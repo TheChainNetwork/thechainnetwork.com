@@ -1,0 +1,145 @@
+{
+  "site": {
+    "name": "The Chain Network",
+    "tagline": "Clear, honest crypto education. No hype. Free.",
+    "domain": "https://thechainnetwork.com",
+    "channel": "@thechainnetwork_1",
+    "youtube_channel": "https://www.youtube.com/@thechainnetwork_1",
+    "languages": ["en", "es", "pt", "hi"]
+  },
+  "levels": {
+    "beginner": "Beginner (01-06)",
+    "intermediate": "Intermediate (07-12)",
+    "advanced": "Advanced (13-17)",
+    "finance": "Global Digital Finance Transition (18-28)",
+    "uk": "UK-only (29-31)"
+  },
+  "subjects": [
+    {
+      "n": "01", "level": "beginner", "tag": "blockchain_basics",
+      "title": {
+        "en": "what is a blockchain, explained simply for beginners",
+        "es": "qué es una blockchain, explicado de forma sencilla",
+        "pt": "o que é uma blockchain, explicado de forma simples",
+        "hi": "ब्लॉकचेन क्या है, शुरुआती लोगों के लिए आसान भाषा में"
+      }
+    },
+    {
+      "n": "02", "level": "beginner", "tag": "transaction_verification",
+      "title": {
+        "en": "how a blockchain verifies and confirms a transaction",
+        "es": "cómo verifica y confirma una transacción una blockchain",
+        "pt": "como uma blockchain verifica e confirma uma transação",
+        "hi": "ब्लॉकचेन लेन-देन की पुष्टि और कन्फ़र्म कैसे करता है"
+      }
+    },
+    {
+      "n": "03", "level": "beginner", "tag": "wrong_blockchain_danger",
+      "title": {
+        "en": "sending crypto on the wrong blockchain and how to avoid losing funds",
+        "es": "enviar criptomonedas por la blockchain equivocada y cómo evitar perder tu dinero",
+        "pt": "enviar criptomoedas pela blockchain errada e como evitar perder seu dinheiro",
+        "hi": "ग़लत ब्लॉकचेन पर क्रिप्टो भेजना और पैसे गँवाने से कैसे बचें"
+      }
+    },
+    {
+      "n": "04", "level": "beginner", "tag": "choosing_network",
+      "title": {
+        "en": "how to choose and check the right network before you send",
+        "es": "cómo elegir y comprobar la red correcta antes de enviar",
+        "pt": "como escolher e conferir a rede correta antes de enviar",
+        "hi": "भेजने से पहले सही नेटवर्क कैसे चुनें और जाँचें"
+      }
+    },
+    {
+      "n": "05", "level": "beginner", "tag": "keys_wallets_custody",
+      "title": {
+        "en": "crypto keys, wallets and custody explained",
+        "es": "claves, monederos y custodia de criptomonedas explicado",
+        "pt": "chaves, carteiras e custódia de criptomoedas explicado",
+        "hi": "क्रिप्टो चाबियाँ, wallet और कस्टडी आसान भाषा में"
+      }
+    },
+    {
+      "n": "06", "level": "beginner", "tag": "self_custody_hardware",
+      "title": {
+        "en": "self-custody and hardware wallets, ledger and trezor explained",
+        "es": "autocustodia y seguridad del hardware explicado",
+        "pt": "autocustódia e segurança do hardware explicado",
+        "hi": "self-custody और हार्डवेयर सुरक्षा, Ledger और Trezor समझें"
+      }
+    },
+    {
+      "n": "07", "level": "intermediate", "tag": "market_limit_orders",
+      "title": {
+        "en": "market orders vs limit orders explained for beginners",
+        "es": "órdenes de mercado y órdenes límite explicado",
+        "pt": "ordens de mercado e ordens limite explicado",
+        "hi": "market order बनाम limit order, शुरुआती लोगों के लिए आसान भाषा में"
+      }
+    },
+    {
+      "n": "08", "level": "intermediate", "tag": "stablecoins",
+      "title": {
+        "en": "stablecoins explained, USDT, USDC and DAI",
+        "es": "stablecoins explicadas, USDT, USDC y DAI",
+        "pt": "stablecoins explicadas, USDT, USDC e DAI",
+        "hi": "stablecoins समझें, USDT, USDC और DAI"
+      }
+    },
+    {
+      "n": "09", "level": "intermediate", "tag": "swaps_bridges",
+      "title": {
+        "en": "swaps and bridges, moving assets across chains",
+        "es": "swaps y puentes, mover activos entre blockchains",
+        "pt": "swaps e pontes, movendo ativos entre blockchains",
+        "hi": "swaps और bridges, एक blockchain से दूसरी पर संपत्ति ले जाना"
+      }
+    },
+    {
+      "n": "10", "level": "intermediate", "tag": "gas_fees",
+      "title": {
+        "en": "gas and fees, why transactions cost what they cost",
+        "es": "gas y comisiones, por qué las operaciones cuestan lo que cuestan",
+        "pt": "gás e taxas, por que as transações custam o que custam",
+        "hi": "gas और fees, लेन-देन की लागत इतनी क्यों होती है"
+      }
+    },
+    {
+      "n": "11", "level": "intermediate", "tag": "scams_phishing",
+      "title": {
+        "en": "scams, phishing and social engineering, how to spot a trap",
+        "es": "estafas, phishing e ingeniería social, cómo detectar una trampa",
+        "pt": "golpes, phishing e engenharia social, como reconhecer uma armadilha",
+        "hi": "scams, phishing और social engineering, जाल को कैसे पहचानें"
+      }
+    },
+    {
+      "n": "12", "level": "intermediate", "tag": "portfolio_security",
+      "title": {
+        "en": "portfolio security, structuring your holdings so one mistake cannot wipe you out",
+        "es": "seguridad de la cartera, estructura tus tenencias para que un error no te arruine",
+        "pt": "segurança da carteira, estruture o que você tem para um erro não te arruinar",
+        "hi": "portfolio security, अपनी होल्डिंग्स को ऐसे ढाँचा दें कि एक ग़लती आपको ख़त्म न कर सके"
+      }
+    },
+    {
+      "n": "13", "level": "advanced", "tag": "defi_explained",
+      "title": {
+        "en": "DeFi for normal people, how decentralised finance actually works",
+        "es": "DeFi para gente normal, cómo funcionan de verdad las finanzas descentralizadas",
+        "pt": "DeFi para gente normal, como as finanças descentralizadas funcionam de verdade",
+        "hi": "DeFi आम लोगों के लिए, decentralised finance असल में कैसे काम करता है"
+      }
+    },
+    {
+      "n": "14", "level": "advanced", "tag": "tokenised_rwa",
+      "title": {
+        "en": "tokenised assets and real world assets, property and bonds on the blockchain",
+        "es": "activos tokenizados y activos del mundo real, vivienda y bonos en la blockchain",
+        "pt": "ativos tokenizados e ativos do mundo real, imóveis e títulos na blockchain",
+        "hi": "tokenised assets और real world assets, घर-ज़मीन और bonds को blockchain पर लाना"
+      }
+    }
+  ]
+}
