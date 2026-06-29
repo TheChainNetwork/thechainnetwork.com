@@ -18,6 +18,30 @@ LANG_KEYS = {"EN": "en", "ES": "es", "HI": "hi", "PT": "pt"}
 # website uses hi internally; links file uses HI for Hindi
 
 
+def lang_qr_datauris(dom):
+    """Generate base64 PNG data-URIs for the per-language website QR codes
+    (dom/#en, #es, #pt, #hi). Embedded inline so the page stays flat and
+    self-contained. Returns {} gracefully if the qrcode lib is unavailable,
+    in which case the page falls back to a plain text link."""
+    try:
+        import io, base64, qrcode
+    except Exception as e:
+        print("WARN: qrcode lib not available, QR panel will use text fallback:", e)
+        return {}
+    out = {}
+    for code in ("en", "es", "pt", "hi"):
+        url = f"{dom}/#{code}"
+        qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M,
+                           box_size=6, border=2)
+        qr.add_data(url)
+        qr.make(fit=True)
+        img = qr.make_image(fill_color="#0b1f3a", back_color="white")
+        buf = io.BytesIO()
+        img.save(buf, format="PNG")
+        out[code] = "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
+    return out
+
+
 def load_catalog():
     with open(CATALOG, encoding="utf-8") as f:
         return json.load(f)
@@ -185,6 +209,12 @@ header{padding:30px 0 14px}
 .langbar{display:flex;gap:6px;margin-left:auto}
 .lang{padding:6px 10px;border:2px solid var(--line);border-radius:8px;cursor:pointer;font-weight:700;font-size:13px}
 .lang.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.langqr{display:flex;flex-direction:column;align-items:center;gap:6px;margin:6px auto 18px;padding:16px 18px;border:2px solid var(--line);border-radius:16px;background:var(--bg);max-width:260px;text-align:center}
+.langqr-cap{font-weight:700;font-size:15px;color:var(--ink)}
+.langqr-imgs{margin:4px 0}
+.langqr-img{width:180px;height:180px;image-rendering:pixelated;border-radius:8px}
+.langqr-link{display:inline-block;font-weight:700;color:var(--brand);word-break:break-all}
+.langqr-sub{font-size:12px;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0 40px}
 .card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg);transition:transform .12s,box-shadow .12s}
 .card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(20,20,50,.10)}
@@ -262,6 +292,31 @@ def write_index(cat, recs):
 
 
 def _write_index_file(cat, dom, cards_html, json_ld, count):
+    qr = lang_qr_datauris(dom)
+    # Build the QR panel. If QR lib was unavailable, fall back to plain links.
+    qr_labels = {"en": "English", "es": "Español", "pt": "Português", "hi": "हिन्दी"}
+    if qr:
+        qr_imgs = "".join(
+            f'<img class="langqr-img" data-qr="{c}" src="{qr[c]}" '
+            f'alt="QR to {dom}/#{c}" style="display:none">'
+            for c in ("en", "es", "pt", "hi")
+        )
+        qr_inner = (
+            f'<div class="langqr-imgs">{qr_imgs}'
+            f'<img class="langqr-img" data-qr="all" src="{qr["en"]}" '
+            f'alt="QR to {dom}" style="display:none"></div>'
+        )
+    else:
+        qr_inner = (
+            f'<div class="langqr-imgs"><a class="langqr-link" id="langqr-link" '
+            f'href="{dom}/" target="_blank" rel="noopener">{dom}</a></div>'
+        )
+    qr_panel = f"""
+<div class="langqr" id="langqr" aria-label="Scan to open this site in the selected language">
+  <div class="langqr-cap">Scan to open in <span id="langqr-lang">English</span></div>
+  {qr_inner}
+  <div class="langqr-sub">Point your phone camera here. Share it anywhere.</div>
+</div>"""
     head = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -302,6 +357,7 @@ def _write_index_file(cat, dom, cards_html, json_ld, count):
     <span class="lang" data-l="all">ALL</span>
   </div>
 </div>
+{qr_panel}
 <div class="controls" id="levelbar">
   <span class="chip active" data-lv="all">All levels</span>
   <span class="chip" data-lv="beginner">Beginner</span>
@@ -335,6 +391,17 @@ def _append_index_footer_js(cat, dom, head, count):
 (function(){{
   var grid=document.getElementById('grid'),cards=[].slice.call(grid.children);
   var q='',lang='en',lv='all',empty=document.getElementById('empty');
+  var qrLabels={{'en':'English','es':'Español','pt':'Português','hi':'हिन्दी','all':'all languages'}};
+  function showQR(){{
+    var imgs=document.querySelectorAll('.langqr-img');
+    if(imgs.length){{
+      [].forEach.call(imgs,function(im){{im.style.display=(im.dataset.qr===lang)?'':'none';}});
+    }}
+    var lk=document.getElementById('langqr-link');
+    if(lk){{lk.href='https://www.thechainnetwork.com/#'+(lang==='all'?'':lang);}}
+    var lbl=document.getElementById('langqr-lang');
+    if(lbl){{lbl.textContent=qrLabels[lang]||'English';}}
+  }}
   function apply(){{
     var shown=0;
     cards.forEach(function(c){{
@@ -344,6 +411,7 @@ def _append_index_footer_js(cat, dom, head, count):
       c.style.display=ok?'':'none'; if(ok)shown++;
     }});
     empty.style.display=shown?'none':'block';
+    showQR();
   }}
   document.getElementById('search').addEventListener('input',function(e){{q=e.target.value.toLowerCase().trim();apply();}});
   document.getElementById('langbar').addEventListener('click',function(e){{
@@ -356,15 +424,30 @@ def _append_index_footer_js(cat, dom, head, count):
     [].forEach.call(this.children,function(x){{x.classList.remove('active');}});
     e.target.classList.add('active');lv=e.target.dataset.lv;apply();
   }});
-  // Default view is EN (ordered). Geo-detect overrides for es/pt/hi visitors.
+  // QR/deep-link: #en #es #pt #hi #all in the URL selects that language. Takes priority over geo-detect.
+  function langFromHash(){{
+    var h=(location.hash||'').replace('#','').slice(0,3).toLowerCase();
+    return ({{'en':'en','es':'es','pt':'pt','hi':'hi','in':'hi','all':'all'}})[h]||'';
+  }}
+  function selectLang(l){{
+    var btn=document.querySelector('.lang[data-l="'+l+'"]');
+    if(btn){{btn.click();return true;}}
+    return false;
+  }}
+  window.addEventListener('hashchange',function(){{var l=langFromHash();if(l)selectLang(l);}});
+  // Default view is EN (ordered). Hash wins; otherwise geo-detect overrides for es/pt/hi visitors.
   try{{
-    var nav=(navigator.language||'en').slice(0,2).toLowerCase();
-    var map={{'es':'es','pt':'pt','hi':'hi','en':'en'}};
-    if(map[nav]&&map[nav]!=='en'){{
-      var btn=document.querySelector('.lang[data-l="'+map[nav]+'"]');
-      if(btn){{btn.click();}}
-      else{{apply();}}
-    }}else{{apply();}}
+    var hl=langFromHash();
+    if(hl){{ if(!selectLang(hl)){{apply();}} }}
+    else{{
+      var nav=(navigator.language||'en').slice(0,2).toLowerCase();
+      var map={{'es':'es','pt':'pt','hi':'hi','en':'en'}};
+      if(map[nav]&&map[nav]!=='en'){{
+        var btn=document.querySelector('.lang[data-l="'+map[nav]+'"]');
+        if(btn){{btn.click();}}
+        else{{apply();}}
+      }}else{{apply();}}
+    }}
   }}catch(e){{apply();}}
 }})();
 </script>

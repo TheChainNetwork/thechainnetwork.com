@@ -5,7 +5,12 @@
     "domain": "https://thechainnetwork.com",
     "channel": "@thechainnetwork_1",
     "youtube_channel": "https://www.youtube.com/@thechainnetwork_1",
-    "languages": ["en", "es", "pt", "hi"]
+    "languages": [
+      "en",
+      "es",
+      "pt",
+      "hi"
+    ]
   },
   "levels": {
     "beginner": "Beginner (01-06)",
@@ -16,7 +21,9 @@
   },
   "subjects": [
     {
-      "n": "01", "level": "beginner", "tag": "blockchain_basics",
+      "n": "01",
+      "level": "beginner",
+      "tag": "blockchain_basics",
       "title": {
         "en": "what is a blockchain, explained simply for beginners",
         "es": "qué es una blockchain, explicado de forma sencilla",
@@ -25,7 +32,9 @@
       }
     },
     {
-      "n": "02", "level": "beginner", "tag": "transaction_verification",
+      "n": "02",
+      "level": "beginner",
+      "tag": "transaction_verification",
       "title": {
         "en": "how a blockchain verifies and confirms a transaction",
         "es": "cómo verifica y confirma una transacción una blockchain",
@@ -34,7 +43,9 @@
       }
     },
     {
-      "n": "03", "level": "beginner", "tag": "wrong_blockchain_danger",
+      "n": "03",
+      "level": "beginner",
+      "tag": "wrong_blockchain_danger",
       "title": {
         "en": "sending crypto on the wrong blockchain and how to avoid losing funds",
         "es": "enviar criptomonedas por la blockchain equivocada y cómo evitar perder tu dinero",
@@ -43,7 +54,9 @@
       }
     },
     {
-      "n": "04", "level": "beginner", "tag": "choosing_network",
+      "n": "04",
+      "level": "beginner",
+      "tag": "choosing_network",
       "title": {
         "en": "how to choose and check the right network before you send",
         "es": "cómo elegir y comprobar la red correcta antes de enviar",
@@ -52,7 +65,9 @@
       }
     },
     {
-      "n": "05", "level": "beginner", "tag": "keys_wallets_custody",
+      "n": "05",
+      "level": "beginner",
+      "tag": "keys_wallets_custody",
       "title": {
         "en": "crypto keys, wallets and custody explained",
         "es": "claves, monederos y custodia de criptomonedas explicado",
@@ -61,7 +76,9 @@
       }
     },
     {
-      "n": "06", "level": "beginner", "tag": "self_custody_hardware",
+      "n": "06",
+      "level": "beginner",
+      "tag": "self_custody_hardware",
       "title": {
         "en": "self-custody and hardware wallets, ledger and trezor explained",
         "es": "autocustodia y seguridad del hardware explicado",
@@ -70,7 +87,9 @@
       }
     },
     {
-      "n": "07", "level": "intermediate", "tag": "market_limit_orders",
+      "n": "07",
+      "level": "intermediate",
+      "tag": "market_limit_orders",
       "title": {
         "en": "market orders vs limit orders explained for beginners",
         "es": "órdenes de mercado y órdenes límite explicado",
@@ -79,7 +98,9 @@
       }
     },
     {
-      "n": "08", "level": "intermediate", "tag": "stablecoins",
+      "n": "08",
+      "level": "intermediate",
+      "tag": "stablecoins",
       "title": {
         "en": "stablecoins explained, USDT, USDC and DAI",
         "es": "stablecoins explicadas, USDT, USDC y DAI",
@@ -88,7 +109,9 @@
       }
     },
     {
-      "n": "09", "level": "intermediate", "tag": "swaps_bridges",
+      "n": "09",
+      "level": "intermediate",
+      "tag": "swaps_bridges",
       "title": {
         "en": "swaps and bridges, moving assets across chains",
         "es": "swaps y puentes, mover activos entre blockchains",
@@ -97,7 +120,9 @@
       }
     },
     {
-      "n": "10", "level": "intermediate", "tag": "gas_fees",
+      "n": "10",
+      "level": "intermediate",
+      "tag": "gas_fees",
       "title": {
         "en": "gas and fees, why transactions cost what they cost",
         "es": "gas y comisiones, por qué las operaciones cuestan lo que cuestan",
@@ -106,7 +131,9 @@
       }
     },
     {
-      "n": "11", "level": "intermediate", "tag": "scams_phishing",
+      "n": "11",
+      "level": "intermediate",
+      "tag": "scams_phishing",
       "title": {
         "en": "scams, phishing and social engineering, how to spot a trap",
         "es": "estafas, phishing e ingeniería social, cómo detectar una trampa",
@@ -115,7 +142,9 @@
       }
     },
     {
-      "n": "12", "level": "intermediate", "tag": "portfolio_security",
+      "n": "12",
+      "level": "intermediate",
+      "tag": "portfolio_security",
       "title": {
         "en": "portfolio security, structuring your holdings so one mistake cannot wipe you out",
         "es": "seguridad de la cartera, estructura tus tenencias para que un error no te arruine",
@@ -124,7 +153,9 @@
       }
     },
     {
-      "n": "13", "level": "advanced", "tag": "defi_explained",
+      "n": "13",
+      "level": "advanced",
+      "tag": "defi_explained",
       "title": {
         "en": "DeFi for normal people, how decentralised finance actually works",
         "es": "DeFi para gente normal, cómo funcionan de verdad las finanzas descentralizadas",
@@ -133,12 +164,25 @@
       }
     },
     {
-      "n": "14", "level": "advanced", "tag": "tokenised_rwa",
+      "n": "14",
+      "level": "advanced",
+      "tag": "tokenised_rwa",
       "title": {
         "en": "tokenised assets and real world assets, property and bonds on the blockchain",
         "es": "activos tokenizados y activos del mundo real, vivienda y bonos en la blockchain",
         "pt": "ativos tokenizados e ativos do mundo real, imóveis e títulos na blockchain",
         "hi": "tokenised assets और real world assets, घर-ज़मीन और bonds को blockchain पर लाना"
+      }
+    },
+    {
+      "n": "15",
+      "level": "advanced",
+      "tag": "bear_market_survival",
+      "title": {
+        "en": "bear market survival, protecting your capital and your mindset",
+        "es": "sobrevivir a un mercado bajista, proteger tu capital y tu mentalidad",
+        "pt": "sobreviver a um mercado de baixa, proteger o seu capital e a sua cabeça",
+        "hi": "bear market में टिके रहना, अपनी पूँजी और अपने दिमाग़ की रक्षा"
       }
     }
   ]
