@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free classroom downloads for teachers - The Chain Network</title>
+<meta name="description" content="Free, ad-free crypto-literacy lesson packs and worksheets for secondary schools. Register your email to download discussion sheets and lesson plans from The Chain Network.">
+<link rel="canonical" href="https://thechainnetwork.com/teachers.html">
+<style>
+:root{
+  --ink:#1f2430; --muted:#5b6472; --line:#e6e8ee; --bg:#ffffff; --panel:#f7f8fb;
+  --good:#1faa59; --bad:#e23b3b; --brand:#6c4cf1;
+  --r1:#ff5d8f; --r2:#ff9f45; --r3:#ffd23f; --r4:#1faa59; --r5:#3b82f6; --r6:#9b5cf6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+.rainbow{height:6px;background:linear-gradient(90deg,var(--r1),var(--r2),var(--r3),var(--r4),var(--r5),var(--r6))}
+header{padding:30px 0 14px}
+.brand{font-size:30px;font-weight:800;letter-spacing:-.5px}
+.brand span{background:linear-gradient(90deg,var(--r1),var(--r5),var(--r6));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{color:var(--muted);font-size:17px;margin-top:4px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0;align-items:center}
+#search{flex:1;min-width:220px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:16px}
+#search:focus{outline:none;border-color:var(--brand)}
+.chip{padding:8px 14px;border:2px solid var(--line);border-radius:999px;background:var(--bg);cursor:pointer;font-size:14px;font-weight:600;color:var(--muted)}
+.chip.active{background:var(--brand);border-color:var(--brand);color:#fff}
+.langbar{display:flex;gap:6px;margin-left:auto}
+.lang{padding:6px 10px;border:2px solid var(--line);border-radius:8px;cursor:pointer;font-weight:700;font-size:13px}
+.lang.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.langqr{display:flex;flex-direction:column;align-items:center;gap:6px;margin:6px auto 18px;padding:16px 18px;border:2px solid var(--line);border-radius:16px;background:var(--bg);max-width:260px;text-align:center}
+.langqr-cap{font-weight:700;font-size:15px;color:var(--ink)}
+.langqr-imgs{margin:4px 0}
+.langqr-img{width:180px;height:180px;image-rendering:pixelated;border-radius:8px}
+.langqr-link{display:inline-block;font-weight:700;color:var(--brand);word-break:break-all}
+.langqr-sub{font-size:12px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0 40px}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg);transition:transform .12s,box-shadow .12s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(20,20,50,.10)}
+.thumb{display:block;aspect-ratio:16/9;background:#000;position:relative}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb.pending{background:linear-gradient(135deg,#2a2350,#3b2f6b)}
+.thumb.pending::after{content:"In production";position:absolute;inset:0;display:flex;
+  align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px;
+  letter-spacing:.5px;text-transform:uppercase;opacity:.85}
+.thumb img.fallback{visibility:hidden}
+.lvl{position:absolute;top:8px;left:8px;font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px;color:#fff;text-transform:uppercase;letter-spacing:.4px}
+.lvl.beginner{background:var(--r4)}.lvl.intermediate{background:var(--r5)}
+.lvl.advanced{background:var(--r6)}.lvl.finance{background:var(--r2)}.lvl.uk{background:var(--bad)}
+.card .body{padding:12px 14px}
+.num{font-size:12px;font-weight:800;color:var(--brand)}
+.card h3{margin:4px 0 0;font-size:15px;line-height:1.35;font-weight:700}
+.note{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:18px 0}
+.note .good{color:var(--good);font-weight:700}.note .bad{color:var(--bad);font-weight:700}
+footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--muted);font-size:14px}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="rainbow"></div>
+<div class="wrap">
+<header>
+  <div class="brand">The <span>Chain Network</span> · For Teachers</div>
+  <div class="tag">Free, ad-free digital-asset literacy modules for secondary schools.</div>
+</header>
+<div class="note">
+  Every guide comes with classroom-ready materials you can use for
+  <span class="good">discussion and classwork</span>: lesson plans, discussion
+  sheets and slide packs, built from our short video guides. Free to use.
+  Register your email below and we will send the download links and tell you when
+  new packs are added. Education only, never financial advice.
+</div>
+
+<form id="reg" style="margin:18px 0;display:flex;gap:10px;flex-wrap:wrap">
+  <input id="email" type="email" required placeholder="your school or work email"
+    style="flex:1;min-width:240px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font-size:16px">
+  <button type="submit" class="chip active" style="border:none;cursor:pointer">Get the free packs</button>
+</form>
+<p id="regmsg" style="color:var(--good);font-weight:700;display:none">Thank you. Check your inbox for the download links.</p>
+
+<div class="grid" id="dl">
+  <article class="card"><div class="body"><div class="num">LESSON PACK</div>
+    <h3>Coming soon: Beginner crypto-safety pack (subjects 01-06)</h3></div></article>
+  <article class="card"><div class="body"><div class="num">WORKSHEET</div>
+    <h3>Coming soon: Spotting scams and protecting funds (discussion sheet)</h3></div></article>
+</div>
+
+<footer>
+  <p><a href="index.html">Back to the video library</a> · Transparent by design. Honest by default.</p>
+</footer>
+</div>
+<script>
+// Email capture stub: wire to Brevo/mailing list endpoint at launch.
+document.getElementById('reg').addEventListener('submit',function(e){
+  e.preventDefault();
+  // TODO: POST email to mailing-list endpoint (Brevo). For now, store intent.
+  try{localStorage.setItem('tcn_teacher_email',document.getElementById('email').value);}catch(_){}
+  document.getElementById('regmsg').style.display='block';
+  this.reset();
+});
+</script>
+</body>
+</html>
