@@ -197,7 +197,8 @@ a{color:var(--brand);text-decoration:none}
 a:hover{text-decoration:underline}
 .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
 .rainbow{height:6px;background:linear-gradient(90deg,var(--r1),var(--r2),var(--r3),var(--r4),var(--r5),var(--r6))}
-header{padding:30px 0 14px}
+header{padding:30px 0 14px;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
+.header-main{flex:1;min-width:240px}
 .brand{font-size:30px;font-weight:800;letter-spacing:-.5px}
 .brand span{background:linear-gradient(90deg,var(--r1),var(--r5),var(--r6));-webkit-background-clip:text;background-clip:text;color:transparent}
 .tag{color:var(--muted);font-size:17px;margin-top:4px}
@@ -209,12 +210,12 @@ header{padding:30px 0 14px}
 .langbar{display:flex;gap:6px;margin-left:auto}
 .lang{padding:6px 10px;border:2px solid var(--line);border-radius:8px;cursor:pointer;font-weight:700;font-size:13px}
 .lang.active{background:var(--ink);color:#fff;border-color:var(--ink)}
-.langqr{display:flex;flex-direction:column;align-items:center;gap:6px;margin:6px auto 18px;padding:16px 18px;border:2px solid var(--line);border-radius:16px;background:var(--bg);max-width:260px;text-align:center}
-.langqr-cap{font-weight:700;font-size:15px;color:var(--ink)}
-.langqr-imgs{margin:4px 0}
-.langqr-img{width:180px;height:180px;image-rendering:pixelated;border-radius:8px}
-.langqr-link{display:inline-block;font-weight:700;color:var(--brand);word-break:break-all}
-.langqr-sub{font-size:12px;color:var(--muted)}
+.langqr{display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;padding:10px 12px;border:2px solid var(--line);border-radius:14px;background:var(--bg);max-width:150px;text-align:center;align-self:flex-start}
+.langqr-cap{font-weight:700;font-size:12px;color:var(--ink);line-height:1.25}
+.langqr-imgs{margin:2px 0}
+.langqr-img{width:104px;height:104px;image-rendering:pixelated;border-radius:6px}
+.langqr-link{display:inline-block;font-weight:700;color:var(--brand);word-break:break-all;font-size:12px}
+.langqr-sub{font-size:10px;color:var(--muted);line-height:1.25}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:20px 0 40px}
 .card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg);transition:transform .12s,box-shadow .12s}
 .card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(20,20,50,.10)}
@@ -336,8 +337,11 @@ def _write_index_file(cat, dom, cards_html, json_ld, count):
 <div class="rainbow"></div>
 <div class="wrap">
 <header>
-  <div class="brand">The <span>Chain Network</span></div>
-  <div class="tag">Clear, honest crypto education. No hype. No jargon. Free for everyone.</div>
+  <div class="header-main">
+    <div class="brand">The <span>Chain Network</span></div>
+    <div class="tag">Clear, honest crypto education. No hype. No jargon. Free for everyone.</div>
+  </div>
+  {qr_panel}
 </header>
 
 <div class="note">
@@ -357,7 +361,6 @@ def _write_index_file(cat, dom, cards_html, json_ld, count):
     <span class="lang" data-l="all">ALL</span>
   </div>
 </div>
-{qr_panel}
 <div class="controls" id="levelbar">
   <span class="chip active" data-lv="all">All levels</span>
   <span class="chip" data-lv="beginner">Beginner</span>
