@@ -14,7 +14,10 @@
   },
   "levels": {
     "beginner": "Beginner (01-06)",
-    "intermediate": "Intermediate (07-10)"
+    "intermediate": "Intermediate (07-12)",
+    "advanced": "Advanced (13-17)",
+    "finance": "Global Digital Finance Transition (18-28)",
+    "uk": "UK-only (29-31)"
   },
   "subjects": [
     {
@@ -125,6 +128,105 @@
         "es": "gas y comisiones, por qué las operaciones cuestan lo que cuestan",
         "pt": "gás e taxas, por que as transações custam o que custam",
         "hi": "gas और fees, लेन-देन की लागत इतनी क्यों होती है"
+      }
+    },
+    {
+      "n": "11",
+      "level": "intermediate",
+      "tag": "scams_phishing",
+      "title": {
+        "en": "scams, phishing and social engineering, how to spot a trap",
+        "es": "estafas, phishing e ingeniería social, cómo detectar una trampa",
+        "pt": "golpes, phishing e engenharia social, como reconhecer uma armadilha",
+        "hi": "scams, phishing और social engineering, जाल को कैसे पहचानें"
+      }
+    },
+    {
+      "n": "12",
+      "level": "intermediate",
+      "tag": "portfolio_security",
+      "title": {
+        "en": "portfolio security, structuring your holdings so one mistake cannot wipe you out",
+        "es": "seguridad de la cartera, estructura tus tenencias para que un error no te arruine",
+        "pt": "segurança da carteira, estruture o que você tem para um erro não te arruinar",
+        "hi": "portfolio security, अपनी होल्डिंग्स को ऐसे ढाँचा दें कि एक ग़लती आपको ख़त्म न कर सके"
+      }
+    },
+    {
+      "n": "13",
+      "level": "advanced",
+      "tag": "defi_explained",
+      "title": {
+        "en": "DeFi for normal people, how decentralised finance actually works",
+        "es": "DeFi para gente normal, cómo funcionan de verdad las finanzas descentralizadas",
+        "pt": "DeFi para gente normal, como as finanças descentralizadas funcionam de verdade",
+        "hi": "DeFi आम लोगों के लिए, decentralised finance असल में कैसे काम करता है"
+      }
+    },
+    {
+      "n": "14",
+      "level": "advanced",
+      "tag": "tokenised_rwa",
+      "title": {
+        "en": "tokenised assets and real world assets, property and bonds on the blockchain",
+        "es": "activos tokenizados y activos del mundo real, vivienda y bonos en la blockchain",
+        "pt": "ativos tokenizados e ativos do mundo real, imóveis e títulos na blockchain",
+        "hi": "tokenised assets और real world assets, घर-ज़मीन और bonds को blockchain पर लाना"
+      }
+    },
+    {
+      "n": "15",
+      "level": "advanced",
+      "tag": "bear_market_survival",
+      "title": {
+        "en": "bear market survival, protecting your capital and your mindset",
+        "es": "sobrevivir a un mercado bajista, proteger tu capital y tu mentalidad",
+        "pt": "sobreviver a um mercado de baixa, proteger o seu capital e a sua cabeça",
+        "hi": "bear market में टिके रहना, अपनी पूँजी और अपने दिमाग़ की रक्षा"
+      }
+    },
+    {
+      "n": "16",
+      "level": "advanced",
+      "tag": "reading_market_no_hype",
+      "title": {
+        "en": "reading the market without the hype, telling real signal from noise",
+        "es": "leer el mercado sin el ruido, distinguir la señal real de la euforia",
+        "pt": "ler o mercado sem o hype, separar o sinal verdadeiro do ruído",
+        "hi": "बाज़ार को बिना hype के पढ़ना, असली संकेत को शोर से अलग पहचानना"
+      }
+    },
+    {
+      "n": "17",
+      "level": "advanced",
+      "tag": "safe_start_checklist",
+      "title": {
+        "en": "your safe start, the checklist that puts it all together",
+        "es": "tu comienzo seguro, la lista de comprobación que lo une todo",
+        "pt": "seu começo seguro, a lista de verificação que junta tudo",
+        "hi": "आपकी सुरक्षित शुरुआत, वह checklist जो सब कुछ एक जगह जोड़ती है"
+      }
+    },
+    {
+      "n": "18",
+      "level": "finance",
+      "tag": "unbreakable_core",
+      "title": {
+        "en": "the unbreakable core of global finance, DTCC, the Fed and settlement",
+        "es": "el núcleo inquebrantable de las finanzas globales, DTCC, la Fed y la liquidación",
+        "pt": "o núcleo inquebrável das finanças globais, DTCC, o Fed e a liquidação",
+        "hi": "ग्लोबल फाइनेंस का अटूट कोर, DTCC, Fed और settlement कैसे काम करते हैं"
+      }
+    },
+    {
+      "n": "19",
+      "level": "finance",
+      "tag": "banks_upgrading",
+      "title": {
+        "en": "big banks are upgrading, not being replaced",
+        "es": "los grandes bancos se están actualizando, no siendo reemplazados",
+        "pt": "os grandes bancos estão se atualizando, não sendo substituídos",
+        "hi": "बड़े बैंक रिप्लेस नहीं हो रहे, अपग्रेड हो रहे हैं"
       }
     }
   ]

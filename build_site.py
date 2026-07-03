@@ -210,9 +210,9 @@ header{padding:30px 0 14px;display:flex;justify-content:space-between;align-item
 .langbar{display:flex;gap:6px;margin-left:auto}
 .lang{padding:6px 10px;border:2px solid var(--line);border-radius:8px;cursor:pointer;font-weight:700;font-size:13px}
 .lang.active{background:var(--ink);color:#fff;border-color:var(--ink)}
-.langqr{display:flex;flex-direction:column;align-items:center;gap:4px;margin:0;padding:10px 12px;border:2px solid var(--line);border-radius:14px;background:var(--bg);max-width:150px;text-align:center;align-self:flex-start}
+.langqr{display:flex;flex-direction:column;align-items:center;margin:0;padding:4px;border:none;border-radius:8px;background:var(--bg);max-width:112px;align-self:flex-start}
 .langqr-cap{font-weight:700;font-size:12px;color:var(--ink);line-height:1.25}
-.langqr-imgs{margin:2px 0}
+.langqr-imgs{margin:0}
 .langqr-img{width:104px;height:104px;image-rendering:pixelated;border-radius:6px}
 .langqr-link{display:inline-block;font-weight:700;color:var(--brand);word-break:break-all;font-size:12px}
 .langqr-sub{font-size:10px;color:var(--muted);line-height:1.25}
@@ -314,9 +314,7 @@ def _write_index_file(cat, dom, cards_html, json_ld, count):
         )
     qr_panel = f"""
 <div class="langqr" id="langqr" aria-label="Scan to open this site in the selected language">
-  <div class="langqr-cap">Scan to open in <span id="langqr-lang">English</span></div>
   {qr_inner}
-  <div class="langqr-sub">Point your phone camera here. Share it anywhere.</div>
 </div>"""
     head = f"""<!doctype html>
 <html lang="en">
