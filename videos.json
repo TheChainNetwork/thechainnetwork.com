@@ -10,7 +10,7 @@
     "pt",
     "hi"
   ],
-  "count": 40,
+  "count": 44,
   "videos": [
     {
       "video_id": "MziNajSZJjw",
@@ -411,6 +411,46 @@
       "level": "intermediate",
       "title": "gas और fees, लेन-देन की लागत इतनी क्यों होती है",
       "youtube_url": "https://youtu.be/yWAXl_zCOso"
+    },
+    {
+      "video_id": "FbmkVEmHZ6w",
+      "project": "The Chain Network",
+      "language": "en",
+      "subject_n": "11",
+      "subject_tag": "scams_phishing",
+      "level": "intermediate",
+      "title": "scams, phishing and social engineering, how to spot a trap",
+      "youtube_url": "https://youtu.be/FbmkVEmHZ6w"
+    },
+    {
+      "video_id": "GnexkwdqQxo",
+      "project": "The Chain Network",
+      "language": "es",
+      "subject_n": "11",
+      "subject_tag": "scams_phishing",
+      "level": "intermediate",
+      "title": "estafas, phishing e ingeniería social, cómo detectar una trampa",
+      "youtube_url": "https://youtu.be/GnexkwdqQxo"
+    },
+    {
+      "video_id": "MRzqkp9RDbY",
+      "project": "The Chain Network",
+      "language": "pt",
+      "subject_n": "11",
+      "subject_tag": "scams_phishing",
+      "level": "intermediate",
+      "title": "golpes, phishing e engenharia social, como reconhecer uma armadilha",
+      "youtube_url": "https://youtu.be/MRzqkp9RDbY"
+    },
+    {
+      "video_id": "QrAW4vMn6fo",
+      "project": "The Chain Network",
+      "language": "hi",
+      "subject_n": "11",
+      "subject_tag": "scams_phishing",
+      "level": "intermediate",
+      "title": "scams, phishing और social engineering, जाल को कैसे पहचानें",
+      "youtube_url": "https://youtu.be/QrAW4vMn6fo"
     }
   ]
 }

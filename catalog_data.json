@@ -126,6 +126,17 @@
         "pt": "gás e taxas, por que as transações custam o que custam",
         "hi": "gas और fees, लेन-देन की लागत इतनी क्यों होती है"
       }
+    },
+    {
+      "n": "11",
+      "level": "intermediate",
+      "tag": "scams_phishing",
+      "title": {
+        "en": "scams, phishing and social engineering, how to spot a trap",
+        "es": "estafas, phishing e ingeniería social, cómo detectar una trampa",
+        "pt": "golpes, phishing e engenharia social, como reconhecer uma armadilha",
+        "hi": "scams, phishing और social engineering, जाल को कैसे पहचानें"
+      }
     }
   ]
 }
