@@ -10,7 +10,7 @@
     "pt",
     "hi"
   ],
-  "count": 44,
+  "count": 52,
   "videos": [
     {
       "video_id": "MziNajSZJjw",
@@ -451,6 +451,86 @@
       "level": "intermediate",
       "title": "scams, phishing और social engineering, जाल को कैसे पहचानें",
       "youtube_url": "https://youtu.be/QrAW4vMn6fo"
+    },
+    {
+      "video_id": "WNqthQ41aHE",
+      "project": "The Chain Network",
+      "language": "en",
+      "subject_n": "12",
+      "subject_tag": "portfolio_security",
+      "level": "intermediate",
+      "title": "portfolio security, structuring your holdings so one mistake cannot wipe you out",
+      "youtube_url": "https://youtu.be/WNqthQ41aHE"
+    },
+    {
+      "video_id": "exVQLRlRRAs",
+      "project": "The Chain Network",
+      "language": "es",
+      "subject_n": "12",
+      "subject_tag": "portfolio_security",
+      "level": "intermediate",
+      "title": "seguridad de la cartera, estructura tus tenencias para que un error no te arruine",
+      "youtube_url": "https://youtu.be/exVQLRlRRAs"
+    },
+    {
+      "video_id": "KIAq2RK-t58",
+      "project": "The Chain Network",
+      "language": "pt",
+      "subject_n": "12",
+      "subject_tag": "portfolio_security",
+      "level": "intermediate",
+      "title": "segurança da carteira, estruture o que você tem para um erro não te arruinar",
+      "youtube_url": "https://youtu.be/KIAq2RK-t58"
+    },
+    {
+      "video_id": "_zctuErGR_w",
+      "project": "The Chain Network",
+      "language": "hi",
+      "subject_n": "12",
+      "subject_tag": "portfolio_security",
+      "level": "intermediate",
+      "title": "portfolio security, अपनी होल्डिंग्स को ऐसे ढाँचा दें कि एक ग़लती आपको ख़त्म न कर सके",
+      "youtube_url": "https://youtu.be/_zctuErGR_w"
+    },
+    {
+      "video_id": "PC82Whmg7FQ",
+      "project": "The Chain Network",
+      "language": "en",
+      "subject_n": "13",
+      "subject_tag": "defi_explained",
+      "level": "advanced",
+      "title": "DeFi for normal people, how decentralised finance actually works",
+      "youtube_url": "https://youtu.be/PC82Whmg7FQ"
+    },
+    {
+      "video_id": "_oESUpyBfaE",
+      "project": "The Chain Network",
+      "language": "es",
+      "subject_n": "13",
+      "subject_tag": "defi_explained",
+      "level": "advanced",
+      "title": "DeFi para gente normal, cómo funcionan de verdad las finanzas descentralizadas",
+      "youtube_url": "https://youtu.be/_oESUpyBfaE"
+    },
+    {
+      "video_id": "T3K40E6P_TM",
+      "project": "The Chain Network",
+      "language": "pt",
+      "subject_n": "13",
+      "subject_tag": "defi_explained",
+      "level": "advanced",
+      "title": "DeFi para gente normal, como as finanças descentralizadas funcionam de verdade",
+      "youtube_url": "https://youtu.be/T3K40E6P_TM"
+    },
+    {
+      "video_id": "-dl_px7azkc",
+      "project": "The Chain Network",
+      "language": "hi",
+      "subject_n": "13",
+      "subject_tag": "defi_explained",
+      "level": "advanced",
+      "title": "DeFi आम लोगों के लिए, decentralised finance असल में कैसे काम करता है",
+      "youtube_url": "https://youtu.be/-dl_px7azkc"
     }
   ]
 }
