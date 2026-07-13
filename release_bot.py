@@ -7,8 +7,10 @@ are public on YouTube, it rebuilds the site, pushes the deploy, verifies the
 live site, then announces on the five Telegram channels.
 
 Secrets (GitHub Actions repository secrets, set by Mike only):
-  RELEASE_QUEUE        JSON: subjects 14-19 with video IDs and approved posts
+  RELEASE_QUEUE        JSON: queued subjects with video IDs and approved posts
   TELEGRAM_BOT_TOKEN   the @TheChainNetworkBot token
+  BLOTATO_API          Blotato API key, used to post to X @TheChainNetwork
+                       (account 21431). Optional: if absent, X is skipped.
 
 The trigger and the approval are the same act: Mike flipping all four videos
 of a subject to Public. Post copy is pre-approved by Mike in the queue.
@@ -65,6 +67,21 @@ def send(token, chat, text):
     if not resp.get("ok"):
         raise RuntimeError(f"sendMessage failed for {chat}: {resp}")
     print("SENT", chat)
+
+
+def post_to_x(api_key, text):
+    """Publish the release post to X @TheChainNetwork (Blotato account 21431).
+    Never posts to the Better Connected account, which is handled in-house."""
+    body = json.dumps({"post": {
+        "accountId": "21431",
+        "target": {"targetType": "twitter"},
+        "content": {"text": text, "platform": "twitter", "mediaUrls": []},
+    }}).encode()
+    req = urllib.request.Request("https://backend.blotato.com/v2/posts", data=body,
+                                 headers={"blotato-api-key": api_key,
+                                          "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        print("SENT X @TheChainNetwork", r.status)
 
 
 def main():
@@ -125,6 +142,12 @@ def main():
     for key in ["main"] + LANGS:
         send(token, CHATS[key], subj["posts"][key])
         time.sleep(1)
+    blotato = os.environ.get("BLOTATO_API")
+    if blotato and subj["posts"].get("x"):
+        try:
+            post_to_x(blotato, subj["posts"]["x"])
+        except Exception as e:
+            print("WARNING: X post failed, Telegram and site are done:", e)
     releases[n] = "announced"
     with open(RELEASES, "w") as f:
         json.dump(releases, f, indent=1)
