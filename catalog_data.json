@@ -160,6 +160,17 @@
         "pt": "DeFi para gente normal, como as finanças descentralizadas funcionam de verdade",
         "hi": "DeFi आम लोगों के लिए, decentralised finance असल में कैसे काम करता है"
       }
+    },
+    {
+      "n": "14",
+      "level": "advanced",
+      "tag": "tokenised_rwa",
+      "title": {
+        "en": "tokenised assets and real world assets, property and bonds on the blockchain",
+        "es": "activos tokenizados y activos del mundo real, vivienda y bonos en la blockchain",
+        "pt": "ativos tokenizados e ativos do mundo real, imóveis e títulos na blockchain",
+        "hi": "tokenised assets और real world assets, घर-ज़मीन और bonds को blockchain पर लाना"
+      }
     }
   ]
 }
