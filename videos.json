@@ -10,7 +10,7 @@
     "pt",
     "hi"
   ],
-  "count": 72,
+  "count": 76,
   "videos": [
     {
       "video_id": "P1KX4zSXxOg",
@@ -731,6 +731,46 @@
       "level": "finance",
       "title": "ग्लोबल फाइनेंस का अटूट कोर, DTCC, Fed और settlement कैसे काम करते हैं",
       "youtube_url": "https://youtu.be/8v5WmxuPjUw"
+    },
+    {
+      "video_id": "PoXfV_TFbHQ",
+      "project": "The Chain Network",
+      "language": "en",
+      "subject_n": "19",
+      "subject_tag": "banks_upgrading",
+      "level": "finance",
+      "title": "big banks are upgrading, not being replaced",
+      "youtube_url": "https://youtu.be/PoXfV_TFbHQ"
+    },
+    {
+      "video_id": "FMDXnxT9lXo",
+      "project": "The Chain Network",
+      "language": "es",
+      "subject_n": "19",
+      "subject_tag": "banks_upgrading",
+      "level": "finance",
+      "title": "los grandes bancos se están actualizando, no siendo reemplazados",
+      "youtube_url": "https://youtu.be/FMDXnxT9lXo"
+    },
+    {
+      "video_id": "vQyg9sjZlzg",
+      "project": "The Chain Network",
+      "language": "pt",
+      "subject_n": "19",
+      "subject_tag": "banks_upgrading",
+      "level": "finance",
+      "title": "os grandes bancos estão se atualizando, não sendo substituídos",
+      "youtube_url": "https://youtu.be/vQyg9sjZlzg"
+    },
+    {
+      "video_id": "PIeuRw8FOtw",
+      "project": "The Chain Network",
+      "language": "hi",
+      "subject_n": "19",
+      "subject_tag": "banks_upgrading",
+      "level": "finance",
+      "title": "बड़े बैंक रिप्लेस नहीं हो रहे, अपग्रेड हो रहे हैं",
+      "youtube_url": "https://youtu.be/PIeuRw8FOtw"
     }
   ]
 }
