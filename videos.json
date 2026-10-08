@@ -10,7 +10,7 @@
     "pt",
     "hi"
   ],
-  "count": 68,
+  "count": 72,
   "videos": [
     {
       "video_id": "P1KX4zSXxOg",
@@ -691,6 +691,46 @@
       "level": "advanced",
       "title": "आपकी सुरक्षित शुरुआत, वह checklist जो सब कुछ एक जगह जोड़ती है",
       "youtube_url": "https://youtu.be/l6n27vYi30Y"
+    },
+    {
+      "video_id": "SJfuxvZ18Js",
+      "project": "The Chain Network",
+      "language": "en",
+      "subject_n": "18",
+      "subject_tag": "unbreakable_core",
+      "level": "finance",
+      "title": "the unbreakable core of global finance, DTCC, the Fed and settlement",
+      "youtube_url": "https://youtu.be/SJfuxvZ18Js"
+    },
+    {
+      "video_id": "yv0gELq5Pxk",
+      "project": "The Chain Network",
+      "language": "es",
+      "subject_n": "18",
+      "subject_tag": "unbreakable_core",
+      "level": "finance",
+      "title": "el núcleo inquebrantable de las finanzas globales, DTCC, la Fed y la liquidación",
+      "youtube_url": "https://youtu.be/yv0gELq5Pxk"
+    },
+    {
+      "video_id": "dzxpIxJ623M",
+      "project": "The Chain Network",
+      "language": "pt",
+      "subject_n": "18",
+      "subject_tag": "unbreakable_core",
+      "level": "finance",
+      "title": "o núcleo inquebrável das finanças globais, DTCC, o Fed e a liquidação",
+      "youtube_url": "https://youtu.be/dzxpIxJ623M"
+    },
+    {
+      "video_id": "8v5WmxuPjUw",
+      "project": "The Chain Network",
+      "language": "hi",
+      "subject_n": "18",
+      "subject_tag": "unbreakable_core",
+      "level": "finance",
+      "title": "ग्लोबल फाइनेंस का अटूट कोर, DTCC, Fed और settlement कैसे काम करते हैं",
+      "youtube_url": "https://youtu.be/8v5WmxuPjUw"
     }
   ]
 }

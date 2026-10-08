@@ -206,6 +206,17 @@
         "pt": "seu começo seguro, a lista de verificação que junta tudo",
         "hi": "आपकी सुरक्षित शुरुआत, वह checklist जो सब कुछ एक जगह जोड़ती है"
       }
+    },
+    {
+      "n": "18",
+      "level": "finance",
+      "tag": "unbreakable_core",
+      "title": {
+        "en": "the unbreakable core of global finance, DTCC, the Fed and settlement",
+        "es": "el núcleo inquebrantable de las finanzas globales, DTCC, la Fed y la liquidación",
+        "pt": "o núcleo inquebrável das finanças globais, DTCC, o Fed e a liquidação",
+        "hi": "ग्लोबल फाइनेंस का अटूट कोर, DTCC, Fed और settlement कैसे काम करते हैं"
+      }
     }
   ]
 }
