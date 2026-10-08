@@ -195,6 +195,17 @@
         "pt": "ler o mercado sem o hype, separar o sinal verdadeiro do ruído",
         "hi": "बाज़ार को बिना hype के पढ़ना, असली संकेत को शोर से अलग पहचानना"
       }
+    },
+    {
+      "n": "17",
+      "level": "advanced",
+      "tag": "safe_start_checklist",
+      "title": {
+        "en": "your safe start, the checklist that puts it all together",
+        "es": "tu comienzo seguro, la lista de comprobación que lo une todo",
+        "pt": "seu começo seguro, a lista de verificação que junta tudo",
+        "hi": "आपकी सुरक्षित शुरुआत, वह checklist जो सब कुछ एक जगह जोड़ती है"
+      }
     }
   ]
 }
