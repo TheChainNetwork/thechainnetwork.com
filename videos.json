@@ -10,7 +10,7 @@
     "pt",
     "hi"
   ],
-  "count": 60,
+  "count": 64,
   "videos": [
     {
       "video_id": "P1KX4zSXxOg",
@@ -611,6 +611,46 @@
       "level": "advanced",
       "title": "bear market में टिके रहना, अपनी पूँजी और अपने दिमाग़ की रक्षा",
       "youtube_url": "https://youtu.be/8R3t4n_k3EY"
+    },
+    {
+      "video_id": "yk3QiFDwfYU",
+      "project": "The Chain Network",
+      "language": "en",
+      "subject_n": "16",
+      "subject_tag": "reading_market_no_hype",
+      "level": "advanced",
+      "title": "reading the market without the hype, telling real signal from noise",
+      "youtube_url": "https://youtu.be/yk3QiFDwfYU"
+    },
+    {
+      "video_id": "0aaXaPblOfI",
+      "project": "The Chain Network",
+      "language": "es",
+      "subject_n": "16",
+      "subject_tag": "reading_market_no_hype",
+      "level": "advanced",
+      "title": "leer el mercado sin el ruido, distinguir la señal real de la euforia",
+      "youtube_url": "https://youtu.be/0aaXaPblOfI"
+    },
+    {
+      "video_id": "qrSavdAsey8",
+      "project": "The Chain Network",
+      "language": "pt",
+      "subject_n": "16",
+      "subject_tag": "reading_market_no_hype",
+      "level": "advanced",
+      "title": "ler o mercado sem o hype, separar o sinal verdadeiro do ruído",
+      "youtube_url": "https://youtu.be/qrSavdAsey8"
+    },
+    {
+      "video_id": "PurnOxKGJJc",
+      "project": "The Chain Network",
+      "language": "hi",
+      "subject_n": "16",
+      "subject_tag": "reading_market_no_hype",
+      "level": "advanced",
+      "title": "बाज़ार को बिना hype के पढ़ना, असली संकेत को शोर से अलग पहचानना",
+      "youtube_url": "https://youtu.be/PurnOxKGJJc"
     }
   ]
 }

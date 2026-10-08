@@ -184,6 +184,17 @@
         "pt": "sobreviver a um mercado de baixa, proteger o seu capital e a sua cabeça",
         "hi": "bear market में टिके रहना, अपनी पूँजी और अपने दिमाग़ की रक्षा"
       }
+    },
+    {
+      "n": "16",
+      "level": "advanced",
+      "tag": "reading_market_no_hype",
+      "title": {
+        "en": "reading the market without the hype, telling real signal from noise",
+        "es": "leer el mercado sin el ruido, distinguir la señal real de la euforia",
+        "pt": "ler o mercado sem o hype, separar o sinal verdadeiro do ruído",
+        "hi": "बाज़ार को बिना hype के पढ़ना, असली संकेत को शोर से अलग पहचानना"
+      }
     }
   ]
 }
