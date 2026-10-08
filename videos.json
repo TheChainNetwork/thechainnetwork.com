@@ -10,7 +10,7 @@
     "pt",
     "hi"
   ],
-  "count": 76,
+  "count": 80,
   "videos": [
     {
       "video_id": "P1KX4zSXxOg",
@@ -771,6 +771,46 @@
       "level": "finance",
       "title": "बड़े बैंक रिप्लेस नहीं हो रहे, अपग्रेड हो रहे हैं",
       "youtube_url": "https://youtu.be/PIeuRw8FOtw"
+    },
+    {
+      "video_id": "93qp0mdfptM",
+      "project": "The Chain Network",
+      "language": "en",
+      "subject_n": "20",
+      "subject_tag": "programmable_finance",
+      "level": "finance",
+      "title": "tokenisation and programmable finance, the smart contract revolution",
+      "youtube_url": "https://youtu.be/93qp0mdfptM"
+    },
+    {
+      "video_id": "bijk6oRg8Wc",
+      "project": "The Chain Network",
+      "language": "es",
+      "subject_n": "20",
+      "subject_tag": "programmable_finance",
+      "level": "finance",
+      "title": "tokenizacion y finanzas programables",
+      "youtube_url": "https://youtu.be/bijk6oRg8Wc"
+    },
+    {
+      "video_id": "NXORvfB8xoM",
+      "project": "The Chain Network",
+      "language": "pt",
+      "subject_n": "20",
+      "subject_tag": "programmable_finance",
+      "level": "finance",
+      "title": "tokenizacao e financas programaveis",
+      "youtube_url": "https://youtu.be/NXORvfB8xoM"
+    },
+    {
+      "video_id": "GHsrKEeJioc",
+      "project": "The Chain Network",
+      "language": "hi",
+      "subject_n": "20",
+      "subject_tag": "programmable_finance",
+      "level": "finance",
+      "title": "tokenisation aur programmable finance",
+      "youtube_url": "https://youtu.be/GHsrKEeJioc"
     }
   ]
 }

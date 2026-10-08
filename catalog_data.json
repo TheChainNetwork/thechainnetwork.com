@@ -228,6 +228,17 @@
         "pt": "os grandes bancos estão se atualizando, não sendo substituídos",
         "hi": "बड़े बैंक रिप्लेस नहीं हो रहे, अपग्रेड हो रहे हैं"
       }
+    },
+    {
+      "n": "20",
+      "level": "finance",
+      "tag": "programmable_finance",
+      "title": {
+        "en": "tokenisation and programmable finance, the smart contract revolution",
+        "es": "tokenizacion y finanzas programables",
+        "pt": "tokenizacao e financas programaveis",
+        "hi": "tokenisation aur programmable finance"
+      }
     }
   ]
 }
