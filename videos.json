@@ -10,7 +10,7 @@
     "pt",
     "hi"
   ],
-  "count": 80,
+  "count": 84,
   "videos": [
     {
       "video_id": "P1KX4zSXxOg",
@@ -811,6 +811,46 @@
       "level": "finance",
       "title": "tokenisation aur programmable finance",
       "youtube_url": "https://youtu.be/GHsrKEeJioc"
+    },
+    {
+      "video_id": "xb8O-s_3paY",
+      "project": "The Chain Network",
+      "language": "en",
+      "subject_n": "21",
+      "subject_tag": "bank_to_crypto",
+      "level": "finance",
+      "title": "how to get your money from your bank into crypto safely",
+      "youtube_url": "https://youtu.be/xb8O-s_3paY"
+    },
+    {
+      "video_id": "4lx7tXVaMJ0",
+      "project": "The Chain Network",
+      "language": "es",
+      "subject_n": "21",
+      "subject_tag": "bank_to_crypto",
+      "level": "finance",
+      "title": "como llevar tu dinero del banco al cripto",
+      "youtube_url": "https://youtu.be/4lx7tXVaMJ0"
+    },
+    {
+      "video_id": "JaBu0yDJhHM",
+      "project": "The Chain Network",
+      "language": "pt",
+      "subject_n": "21",
+      "subject_tag": "bank_to_crypto",
+      "level": "finance",
+      "title": "como levar seu dinheiro do banco para o cripto",
+      "youtube_url": "https://youtu.be/JaBu0yDJhHM"
+    },
+    {
+      "video_id": "OBc4p5Rzv5s",
+      "project": "The Chain Network",
+      "language": "hi",
+      "subject_n": "21",
+      "subject_tag": "bank_to_crypto",
+      "level": "finance",
+      "title": "bank se crypto me paisa kaise laayen",
+      "youtube_url": "https://youtu.be/OBc4p5Rzv5s"
     }
   ]
 }

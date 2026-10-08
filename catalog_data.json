@@ -239,6 +239,17 @@
         "pt": "tokenizacao e financas programaveis",
         "hi": "tokenisation aur programmable finance"
       }
+    },
+    {
+      "n": "21",
+      "level": "finance",
+      "tag": "bank_to_crypto",
+      "title": {
+        "en": "how to get your money from your bank into crypto safely",
+        "es": "como llevar tu dinero del banco al cripto",
+        "pt": "como levar seu dinheiro do banco para o cripto",
+        "hi": "bank se crypto me paisa kaise laayen"
+      }
     }
   ]
 }
